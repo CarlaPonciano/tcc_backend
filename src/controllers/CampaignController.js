@@ -86,5 +86,11 @@ module.exports = {
         campaigns.forEach(campaign => formatObjectLocation(campaign));
 
         return response.json(campaigns);
-    }
+    },
+
+    async countCampaigns (request, response) {
+        const count = await Campaign.count();
+
+        return response.json(count);
+    },
 }

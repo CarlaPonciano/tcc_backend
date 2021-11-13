@@ -13,6 +13,7 @@ routes.get('/organizations/:organization_id', OrganizationController.show);
 routes.get('/organizations', OrganizationController.index);
 routes.post('/organizations', OrganizationController.store);
 
+routes.get('/campaigns/count', CampaignController.countCampaigns);
 routes.get('/campaigns/:campaign_id', CampaignController.show);
 routes.get('/campaigns', CampaignController.index);
 routes.post('/users/:creator_user_id/campaigns', CampaignController.storeCreatorUserCampaign);
