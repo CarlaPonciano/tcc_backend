@@ -1,0 +1,38 @@
+--
+-- TOC entry 3857 (class 0 OID 17458)
+-- Dependencies: 214
+-- Data for Name: campaigns; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.campaigns (id, creator_user_id, creator_organization_id, name, description, goal, amount_raised, picture, address, latitude_longitude, start_date, end_date, created_at, updated_at) VALUES (1, NULL, 2, 'Ajude nosso pequeno Bolt!', 'Precisamos da sua ajuda para comparar os medicamentos necessários para Bolt. Bolt recentemente sofre um acidente na rua e é muito importante que ele continue tomandos os medicamentos para ajudar na recuperação. Temos certeza que você será recompensado em sua vida!!', 3.125, 0, 'https://images.unsplash.com/photo-1601758124096-1fd661873b95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80', 'Av. Mariza de Souza Mendes, 300 - Siderurgia, Ouro Branco - MG, 36420-000', '0101000020E6100000A038807EDF8534C020425C397BDA45C0', '2021-10-31 21:00:00-03', '2022-02-18 21:00:00-03', '2021-10-19 22:12:21.133-03', '2021-10-19 22:12:21.133-03');
+INSERT INTO public.campaigns (id, creator_user_id, creator_organization_id, name, description, goal, amount_raised, picture, address, latitude_longitude, start_date, end_date, created_at, updated_at) VALUES (3, NULL, 1, 'Campanha do Michael', 'Michael quer muito estudar, porém não conseguimos bancar seus materiais didáticos. Poderia ajudar o pequeno Michael a ter essa oportunidade? Tenho certeza que ele não irá te decepcionar.', 985, 0, 'https://images.unsplash.com/photo-1610500795224-fb86b02926d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80', 'Av. Mariza de Souza Mendes, 600 - Siderurgia, Ouro Branco - MG, 36420-000', '0101000020E6100000CDCEFD309D8534C085EAE6E26FDA45C0', '2021-12-19 21:00:00-03', '2022-02-28 21:00:00-03', '2021-11-13 15:36:18.154-03', '2021-11-13 15:36:18.154-03');
+INSERT INTO public.campaigns (id, creator_user_id, creator_organization_id, name, description, goal, amount_raised, picture, address, latitude_longitude, start_date, end_date, created_at, updated_at) VALUES (4, 1, NULL, 'Campanha da Joana', 'Ajude na arrecadação da campanha da Joana!! Joana precisa de uma cirurgia de R$10.000,00 pois sofreu um acidente. Contamos com a sua ajuda.', 11.579, 0, 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80', 'Av. Barão de Eschwege, 301, Ouro Branco - MG, 36420-000', '0101000020E6100000CD1DFD2FD78234C0FD1CD59FB3DA45C0', '2021-10-31 21:00:00-03', '2022-01-30 21:00:00-03', '2021-11-19 19:28:37.552-03', '2021-11-19 19:28:37.552-03');
+INSERT INTO public.campaigns (id, creator_user_id, creator_organization_id, name, description, goal, amount_raised, picture, address, latitude_longitude, start_date, end_date, created_at, updated_at) VALUES (5, NULL, 2, 'MacCat pede a sua ajuda!', 'O carinha que precisa de ajuda dessa vez é o MacCat!! O gatinho que chegou recentemente à nossa Ong é bem novinho e possui uma doença muito rara. Precisamos da sua ajuda para comprar medicamentos até que ele consiga um lar. MacCat conta com sua ajuda!!', 7.879, 0, 'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80', 'Av. Mariza de Souza Mendes, 300 - Siderurgia, Ouro Branco - MG, 36420-000', '0101000020E6100000A038807EDF8534C020425C397BDA45C0', '2021-12-09 21:00:00-03', '2022-03-04 21:00:00-03', '2021-11-19 19:39:46.527-03', '2021-11-19 19:39:46.527-03');
+
+
+--
+-- TOC entry 3855 (class 0 OID 17447)
+-- Dependencies: 212
+-- Data for Name: organizations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.organizations (id, name, description, profile_picture, address, latitude_longitude, created_at, updated_at) VALUES (2, 'Melhor Amigo - ONG dos Animais', 'A Melhor Amigo - ONG dos Animais encontra cachorrinhos abandonados e encontra um lar especial para eles!', 'https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80', 'Av. Mariza de Souza Mendes, 300 - Siderurgia, Ouro Branco - MG, 36420-000', '0101000020E6100000A038807EDF8534C020425C397BDA45C0', '2021-10-19 22:11:18.628-03', '2021-10-19 22:11:18.628-03');
+INSERT INTO public.organizations (id, name, description, profile_picture, address, latitude_longitude, created_at, updated_at) VALUES (1, 'Organização Somando Forças', 'A Organização Somando Forças foi criada com o objetivo de encontrar e somar todas as pessoas que buscam fazer o bem.', 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80', 'Av. Mariza de Souza Mendes, 600 - Siderurgia, Ouro Branco - MG, 36420-000', '0101000020E6100000CDCEFD309D8534C085EAE6E26FDA45C0', '2021-10-19 22:09:36.613-03', '2021-10-19 22:09:36.613-03');
+
+
+--
+-- TOC entry 3701 (class 0 OID 16709)
+-- Dependencies: 207
+-- Data for Name: spatial_ref_sys; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 3853 (class 0 OID 16393)
+-- Dependencies: 205
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.users (id, name, last_name, username, email, password, created_at, updated_at) VALUES (1, 'Carla', 'Ponciano', 'carlaponciano', 'si.carla.ponciano@outlook.com', 'senha123', '2021-10-16 17:30:21.396-03', '2021-10-16 17:30:21.396-03');
+INSERT INTO public.users (id, name, last_name, username, email, password, created_at, updated_at) VALUES (2, 'Saulo', 'Henrique', 'saulohenrique', 'saulo.henrique@outlook.com', 'senha321', '2021-10-16 17:37:11.904-03', '2021-10-16 17:37:11.904-03');
